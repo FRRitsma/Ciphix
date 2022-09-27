@@ -11,7 +11,7 @@ import json
 import os
 
 df_main = pd.read_csv('data.csv', header=None)
-df_main.columns = ['Text']
+df_main.columns = ['text']
 
 #%%
 def filter_tags(tag:str) -> str:
