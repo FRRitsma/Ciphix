@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h3>
+            Ciphix
+        </h3>
+    </head>
+    <body>
+        Enter tweet and submit to retrieve topic:
+        <!-- <form action="action_landing" method="POST">
+            {% csrf_token %}
+            <p>Please enter some text below:</p>
+            <input type="text">
+        </form> -->
+
+        <form action="/action_landing" method="post" target="_blank">
+            {% csrf_token %}
+            <label for="input_tweet">Enter your tweet:</label>
+            <input type="text" id="input_tweet" name="input_tweet"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <p>
+            {{title}}
+        </p>
+
+    </body>
+</html>
